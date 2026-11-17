@@ -1,0 +1,11 @@
+node_modules/
+coverage/
+*.log
+*.tgz
+*.zip
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+.tmp/
+.DS_Store

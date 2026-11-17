@@ -1,0 +1,34 @@
+{
+  "name": "gemini4-mcp",
+  "version": "0.1.0",
+  "description": "Experimental keyless Claude Code compatibility gateway powered by the official Google Antigravity CLI",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "g4": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/cli.js && node --check src/server.js && node --check src/agy.js && node --check src/protocol.js && node --check src/prompt.js",
+    "verify": "npm run check && npm test",
+    "smoke": "node src/cli.js doctor"
+  },
+  "license": "MIT",
+  "keywords": [
+    "antigravity",
+    "claude-code",
+    "gemini",
+    "gateway",
+    "google-ai",
+    "local-proxy"
+  ],
+  "files": [
+    "src/",
+    "README.md",
+    "SECURITY.md",
+    "docs/",
+    "LICENSE"
+  ]
+}
